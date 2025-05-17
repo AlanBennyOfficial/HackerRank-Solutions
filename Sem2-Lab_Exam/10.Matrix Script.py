@@ -18,5 +18,6 @@ for _ in range(n):
     matrix_item = input()
     matrix.append(matrix_item)
 
+# code
 transpose = ''.join([c for ls in zip(*matrix) for c in ls])
 print(re.sub(r"(?<=\w)[!@#$%& ]+(?=\w)", " ", transpose))
