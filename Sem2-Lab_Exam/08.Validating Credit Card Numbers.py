@@ -10,3 +10,9 @@ TESTER = re.compile(
     r"$")
 for _ in range(int(input().strip())):
     print("Valid" if TESTER.search(input().strip()) else "Invalid")
+
+# Other method
+
+# def is_valid_card(card):
+#     pattern = r"^(\d{4}[-\S]?){4}$"
+#     return bool(re.match(pattern, card)) # and not re.search(r"(\d)(-?\1){3}", card) and card[0] in "456" # Hackerrank's method
